@@ -1,6 +1,6 @@
 ---
 - name: Install htop on Ubuntu and CentOS
-  hosts: all
+  hosts: 192.168.0.105
   tasks:
 
 - package:
