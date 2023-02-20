@@ -1,6 +1,6 @@
 ---
 - name: Install wget package
-  hosts: node1 
+  hosts: all 
   become: yes
   tasks:
     - name: Install wget package
