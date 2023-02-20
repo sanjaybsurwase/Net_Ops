@@ -1,6 +1,6 @@
 ---
 - name: Install httpd and start httpd service
-  hosts: localhost
+  hosts: all
   become: true
 
   tasks:
