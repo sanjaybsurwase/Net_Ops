@@ -1,10 +1,10 @@
 ---
-- name: Install httpd and start httpd service
+- name: Install and configure httpd
   hosts: all
   become: true
 
   tasks:
-    - name: Install httpd package
+    - name: Install httpd
       yum:
         name: httpd
         state: present
@@ -14,3 +14,8 @@
         name: httpd
         state: started
         enabled: true
+
+    - name: Create index.html file
+      copy:
+        content: "<html><body><h1>This web server deployed by AWX</h1></body></html>"
+        dest: /var/www/html/index.html
