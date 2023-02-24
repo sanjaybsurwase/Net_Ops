@@ -17,5 +17,5 @@
 
     - name: Create index.html file
       copy:
-        content: "<html><body><h1>This web server deployed by AWX</h1></body></html>"
+        content: "<html><body><h1>This web server 1 deployed by AWX</h1></body></html>"
         dest: /var/www/html/index.html
